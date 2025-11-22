@@ -61,19 +61,19 @@ class _RegistrationPageState extends State<RegistrationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow.shade50,
+      backgroundColor: Colors.amber.shade50,
       appBar: AppBar(
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.amber[700],
         elevation: 0,
         title: const Text(
           'Create Account',
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.white,
             fontWeight: FontWeight.w600,
             fontSize: 20,
           ),
         ),
-        iconTheme: const IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -105,8 +105,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Colors.yellow,
+                      borderSide: BorderSide(
+                        color: Colors.amber[700]!,
                         width: 2,
                       ),
                     ),
@@ -136,8 +136,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Colors.yellow,
+                      borderSide: BorderSide(
+                        color: Colors.amber[700]!,
                         width: 2,
                       ),
                     ),
@@ -171,8 +171,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Colors.yellow,
+                      borderSide: BorderSide(
+                        color: Colors.amber[700]!,
                         width: 2,
                       ),
                     ),
@@ -206,8 +206,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Colors.yellow,
+                      borderSide: BorderSide(
+                        color: Colors.amber[700]!,
                         width: 2,
                       ),
                     ),
@@ -238,8 +238,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Colors.yellow,
+                      borderSide: BorderSide(
+                        color: Colors.amber[700]!,
                         width: 2,
                       ),
                     ),
@@ -313,8 +313,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Colors.yellow,
+                      borderSide: BorderSide(
+                        color: Colors.amber[700]!,
                         width: 2,
                       ),
                     ),
@@ -347,8 +347,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 ElevatedButton(
                   onPressed: _register,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.yellow,
-                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.amber[700],
+                    foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
