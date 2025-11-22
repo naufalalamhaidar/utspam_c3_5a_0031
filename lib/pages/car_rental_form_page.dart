@@ -28,7 +28,10 @@ class _CarRentalFormPageState extends State<CarRentalFormPage> {
     super.initState();
     _cars = CarData.getCars();
     if (widget.selectedCar != null) {
-      _selectedCar = widget.selectedCar;
+      _selectedCar = _cars.firstWhere(
+        (car) => car.id == widget.selectedCar!.id,
+        orElse: () => widget.selectedCar!,
+      );
     }
   }
 
