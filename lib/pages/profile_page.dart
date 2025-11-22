@@ -50,8 +50,7 @@ class _ProfilePageState extends State<ProfilePage> {
               child: Column(
                 children: [
                   Container(
-                    color: Colors.yellow,
-                    padding: const EdgeInsets.fromLTRB(24, 0, 24, 32),
+                    padding: const EdgeInsets.fromLTRB(24, 24, 24, 32),
                     child: Column(
                       children: [
                         Container(
