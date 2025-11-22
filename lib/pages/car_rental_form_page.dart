@@ -51,9 +51,9 @@ class _CarRentalFormPageState extends State<CarRentalFormPage> {
       builder: (context, child) {
         return Theme(
           data: Theme.of(context).copyWith(
-            colorScheme: const ColorScheme.light(
-              primary: Colors.yellow,
-              onPrimary: Colors.black,
+            colorScheme: ColorScheme.light(
+              primary: Colors.amber[700]!,
+              onPrimary: Colors.white,
               surface: Colors.white,
             ),
           ),
@@ -118,19 +118,19 @@ class _CarRentalFormPageState extends State<CarRentalFormPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow.shade50,
+      backgroundColor: Colors.amber.shade50,
       appBar: AppBar(
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.amber[700],
         elevation: 0,
         title: const Text(
           'New Rental',
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.white,
             fontWeight: FontWeight.w600,
             fontSize: 20,
           ),
         ),
-        iconTheme: const IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -167,8 +167,8 @@ class _CarRentalFormPageState extends State<CarRentalFormPage> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(
-                          color: Colors.yellow,
+                        borderSide: BorderSide(
+                          color: Colors.amber[700]!,
                           width: 2,
                         ),
                       ),
@@ -192,7 +192,7 @@ class _CarRentalFormPageState extends State<CarRentalFormPage> {
                   Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: Colors.yellow.shade100,
+                      color: Colors.amber[100],
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Column(
@@ -262,8 +262,8 @@ class _CarRentalFormPageState extends State<CarRentalFormPage> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Colors.yellow,
+                      borderSide: BorderSide(
+                        color: Colors.amber[700]!,
                         width: 2,
                       ),
                     ),
@@ -293,8 +293,8 @@ class _CarRentalFormPageState extends State<CarRentalFormPage> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Colors.yellow,
+                      borderSide: BorderSide(
+                        color: Colors.amber[700]!,
                         width: 2,
                       ),
                     ),
@@ -353,7 +353,7 @@ class _CarRentalFormPageState extends State<CarRentalFormPage> {
                   Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: Colors.yellow,
+                      color: Colors.amber[700],
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Row(
@@ -381,8 +381,8 @@ class _CarRentalFormPageState extends State<CarRentalFormPage> {
                 ElevatedButton(
                   onPressed: _submitRental,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.yellow,
-                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.amber[700],
+                    foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),

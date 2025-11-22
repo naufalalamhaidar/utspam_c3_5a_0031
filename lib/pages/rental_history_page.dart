@@ -36,22 +36,22 @@ class _RentalHistoryPageState extends State<RentalHistoryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow.shade50,
+      backgroundColor: Colors.amber.shade50,
       appBar: AppBar(
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.amber[700],
         elevation: 0,
         title: const Text(
           'Rental History',
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.white,
             fontWeight: FontWeight.w600,
             fontSize: 20,
           ),
         ),
-        iconTheme: const IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator(color: Colors.yellow))
+          ? Center(child: CircularProgressIndicator(color: Colors.amber[700]))
           : _rentals.isEmpty
           ? Center(
               child: Column(
@@ -68,7 +68,7 @@ class _RentalHistoryPageState extends State<RentalHistoryPage> {
             )
           : RefreshIndicator(
               onRefresh: _loadRentals,
-              color: Colors.yellow,
+              color: Colors.amber[700],
               child: ListView.builder(
                 padding: const EdgeInsets.all(24),
                 itemCount: _rentals.length,
@@ -224,7 +224,7 @@ class _RentalCard extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                      color: Colors.yellow.shade100,
+                      color: Colors.amber[100],
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Row(

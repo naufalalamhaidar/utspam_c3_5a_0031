@@ -76,19 +76,19 @@ class _RentalDetailPageState extends State<RentalDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow.shade50,
+      backgroundColor: Colors.amber.shade50,
       appBar: AppBar(
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.amber[700],
         elevation: 0,
         title: const Text(
           'Rental Details',
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.white,
             fontWeight: FontWeight.w600,
             fontSize: 20,
           ),
         ),
-        iconTheme: const IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -197,7 +197,7 @@ class _RentalDetailPageState extends State<RentalDetailPage> {
                   Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: Colors.yellow,
+                      color: Colors.amber[700],
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Row(
@@ -238,8 +238,8 @@ class _RentalDetailPageState extends State<RentalDetailPage> {
                         }
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
+                        backgroundColor: Colors.amber[700],
+                        foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(vertical: 16),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
