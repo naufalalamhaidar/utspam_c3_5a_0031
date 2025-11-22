@@ -61,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow.shade50,
+      backgroundColor: Colors.amber.shade50,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                       width: 100,
                       height: 100,
                       decoration: BoxDecoration(
-                        color: Colors.yellow,
+                        color: Colors.amber[700],
                         borderRadius: BorderRadius.circular(24),
                       ),
                       child: const Icon(
@@ -188,8 +188,8 @@ class _LoginPageState extends State<LoginPage> {
                     ElevatedButton(
                       onPressed: _isLoading ? null : _login,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
+                        backgroundColor: Colors.amber[700],
+                        foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(vertical: 16),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
