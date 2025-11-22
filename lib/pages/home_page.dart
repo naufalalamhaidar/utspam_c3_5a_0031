@@ -88,21 +88,6 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Expanded(
                         child: _MenuCard(
-                          icon: Icons.add_circle_outline,
-                          title: 'Add Rental',
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const CarRentalFormPage(),
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                      const SizedBox(width: 16),
-                      Expanded(
-                        child: _MenuCard(
                           icon: Icons.history,
                           title: 'Rental History',
                           onTap: () {
