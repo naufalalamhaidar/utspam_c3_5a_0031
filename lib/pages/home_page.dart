@@ -47,9 +47,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow.shade50,
+      backgroundColor: Colors.amber.shade50,
       appBar: AppBar(
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.amber[700],
         elevation: 0,
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.logout, color: Colors.black),
+            icon: const Icon(Icons.logout, color: Colors.white),
             onPressed: _logout,
           ),
         ],
@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              color: Colors.yellow,
+              color: Colors.amber[700],
               padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
               child: Column(
                 children: [
@@ -300,7 +300,7 @@ class _CarCard extends StatelessWidget {
                         vertical: 6,
                       ),
                       decoration: BoxDecoration(
-                        color: Colors.yellow.shade100,
+                        color: Colors.amber[100],
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Text(
@@ -328,8 +328,8 @@ class _CarCard extends StatelessWidget {
                     ElevatedButton(
                       onPressed: onRent,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
+                        backgroundColor: Colors.amber[700],
+                        foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 24,
                           vertical: 12,
