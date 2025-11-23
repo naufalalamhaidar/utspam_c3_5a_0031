@@ -128,7 +128,7 @@ class _HomePageState extends State<HomePage> {
                             showDialog(
                               context: context,
                               builder: (context) => AlertDialog(
-                                title: const Text('CarRentApp'),
+                                title: const Text('Nopal Rental'),
                                 content: const Text(
                                   'Version 1.0.0\nCar rental application',
                                 ),
