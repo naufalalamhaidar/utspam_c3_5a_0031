@@ -88,7 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     const SizedBox(height: 32),
                     const Text(
-                      'CarRentApp',
+                      'Nopal Rental',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 32,
